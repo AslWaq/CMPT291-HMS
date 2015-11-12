@@ -5,7 +5,7 @@ Public Class DatabaseConnection
 
     Public Function runQuery(query As String)
         Dim command As SqlCommand
-        command = Connection.CreateCommand
+        command = Connection.CreateCommand()
         command.CommandText = query
 
         Try
@@ -22,6 +22,7 @@ Public Class DatabaseConnection
             MsgBox(ex.Message)
             Application.Exit()
         End Try
+        'Reader should be closed to by function' 
         Return reader
     End Function
 
@@ -32,5 +33,9 @@ Public Class DatabaseConnection
             MsgBox(ex.Message)
             Application.Exit()
         End Try
+    End Sub
+
+    Sub Destroy()
+        Connection.Close()
     End Sub
 End Class

@@ -78,7 +78,7 @@
     <Compile Include="AdminPanel.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminCredentials.vb" />
+    <Compile Include="Authentication.vb" />
     <Compile Include="Database\ConnectionInfo.vb" />
     <Compile Include="Database\DatabaseConnection.vb" />
     <Compile Include="Staff.Designer.vb">
@@ -137,6 +137,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Database\.gitignore" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -147,9 +148,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database\Tables\dbo.Ward.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
