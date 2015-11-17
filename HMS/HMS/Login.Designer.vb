@@ -22,7 +22,6 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btn_reception = New System.Windows.Forms.Button()
         Me.btn_admin = New System.Windows.Forms.Button()
         Me.text_user = New System.Windows.Forms.TextBox()
         Me.text_pass = New System.Windows.Forms.TextBox()
@@ -31,22 +30,13 @@ Partial Class Login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'btn_reception
-        '
-        Me.btn_reception.Location = New System.Drawing.Point(16, 166)
-        Me.btn_reception.Name = "btn_reception"
-        Me.btn_reception.Size = New System.Drawing.Size(109, 23)
-        Me.btn_reception.TabIndex = 1
-        Me.btn_reception.Text = "Receptionist"
-        Me.btn_reception.UseVisualStyleBackColor = True
-        '
         'btn_admin
         '
         Me.btn_admin.Location = New System.Drawing.Point(178, 166)
         Me.btn_admin.Name = "btn_admin"
         Me.btn_admin.Size = New System.Drawing.Size(107, 23)
         Me.btn_admin.TabIndex = 2
-        Me.btn_admin.Text = "Admin Login"
+        Me.btn_admin.Text = "Login"
         Me.btn_admin.UseVisualStyleBackColor = True
         '
         'text_user
@@ -79,9 +69,9 @@ Partial Class Login
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(13, 47)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(73, 17)
+        Me.Label2.Size = New System.Drawing.Size(21, 17)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Username"
+        Me.Label2.Text = "ID"
         '
         'Label3
         '
@@ -103,7 +93,6 @@ Partial Class Login
         Me.Controls.Add(Me.text_pass)
         Me.Controls.Add(Me.text_user)
         Me.Controls.Add(Me.btn_admin)
-        Me.Controls.Add(Me.btn_reception)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(315, 245)
         Me.MinimizeBox = False
@@ -114,7 +103,6 @@ Partial Class Login
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btn_reception As Button
     Friend WithEvents btn_admin As Button
     Friend WithEvents text_user As TextBox
     Friend WithEvents text_pass As TextBox
