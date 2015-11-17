@@ -1,8 +1,8 @@
-﻿CREATE TABLE [dbo].Ward
+﻿CREATE TABLE [dbo].[Table]
 (
-	Name VARCHAR(50) NOT NULL PRIMARY KEY,
-	Capacity INT NOT NULL,
-	Status VARCHAR(20) NOT NULL,
-	CostPerNight INT NOT NULL,
-	Type VARCHAR(20) NOT NULL
+	[name] VARCHAR(50) NOT NULL PRIMARY KEY, 
+    [capacity] INT NOT NULL, 
+    [status] VARCHAR(20) NOT NULL, 
+    [cost_per_night] MONEY NOT NULL, 
+    [type] VARCHAR(20) NOT NULL
 )
